@@ -1,0 +1,17 @@
+{
+  "name": "my-chat-app",
+  "description": "a chat app",
+  "version": "0.0.1",
+  "engines": {
+    "node": "0.10.x"
+  },
+  "private": true,
+  "dependencies": {
+    "mime": "~1.2.7",
+    "node-static": "^0.7.4",
+    "socket.io": "1.0.5"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}

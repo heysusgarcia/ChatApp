@@ -1,0 +1,46 @@
+<html>
+<head>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+  <link rel="stylesheet" href="/stylesheet/chatroom.css" type="text/css" media="screen">
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+  <script src="javascript/main.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/javascript/jquery.serializejson.js"></script>
+  <script src="/javascript/chat.js"></script>
+  <script src="/javascript/chat_ui.js"></script>
+  <script>
+  var socket = io("http://localhost")
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1>My Chat App</h1>
+        <form class="col-xs-8">
+          <div class="form-group">
+            <label>Message
+              <input type="text" class="form-control" name="message">
+            </label>
+          </div>
+         <input type="submit" class="btn btn-primary" value="Send Message">
+        </form>
+      <div class="room-list col-xs-4"></div>
+        </div>
+      <div class="container">
+        <div class="col-xs-3">
+          <div class="messages">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
