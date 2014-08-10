@@ -1,3 +1,4 @@
 .bg-info {
-  border: 1px solid blue;
+  background: none;
+  box-shadow: 5px 5px 0px #dddddd;
 }
