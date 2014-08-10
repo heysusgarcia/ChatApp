@@ -1,4 +1,5 @@
 .bg-info {
   background: none;
   box-shadow: 5px 5px 0px #dddddd;
+  border-radius: 3px;
 }
