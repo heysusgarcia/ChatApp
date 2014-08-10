@@ -17,8 +17,7 @@
   <script src="/javascript/chat_ui.js"></script>
   <script>
   var socket = io("http://localhost")
-  socket = io.listen(8080);
-  socket.server.removeListener('request', io.server.listeners('request')[0]);
+  io.server.removeListener('request', io.server.listeners('request')[0]);
   </script>
 </head>
 <body>
