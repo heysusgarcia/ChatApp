@@ -9,7 +9,8 @@
   "dependencies": {
     "mime": "~1.2.7",
     "node-static": "^0.7.4",
-    "socket.io": "~1.0.x"
+    "socket.io": "~1.0.x",
+    "cors": "2.4.1"
   },
   "scripts": {
     "start": "node server.js"
