@@ -1,5 +1,21 @@
 .bg-info {
   background: none;
-  box-shadow: 5px 5px 0px #dddddd;
-  border-radius: 3px;
+  border-bottom: 1px solid #dddddd;
+}
+.changed {
+  background: none;
+  border-bottom: 1px solid #dddddd;
+  font-weight: bold;
+}
+.warning {
+  background: none;
+  border-bottom: 1px solid #dddddd;
+  font-weight: bold;
+  color: red;
+}
+.main-header {
+  margin-bottom: 40px;
+}
+.timestamp {
+  color: #9B9898;
 }
