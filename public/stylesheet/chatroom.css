@@ -1,6 +1,11 @@
 .bg-info {
   background: none;
   border-bottom: 1px solid #dddddd;
+  height: auto;
+  width: auto;
+}
+.messages {
+  height: auto;
 }
 .changed {
   background: none;
@@ -18,4 +23,8 @@
 }
 .timestamp {
   color: #9B9898;
+}
+.messages-container {
+  display: inline-block;
+  height: auto;
 }

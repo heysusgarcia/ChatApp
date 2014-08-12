@@ -13,7 +13,7 @@
 
     this.socket.on("message", function (message) {
       console.log("message?", message)
-      var $message = $("<div class='bg-info'>").text(message.text);
+      var $message = $("<div class='bg-info' style='height: auto'>").text(message.text);
       var timeStamp = $("<i class='timestamp pull-right'>").text(' ' + moment().format('LT'));
       $message.append(timeStamp);
       $(".messages").prepend($message);
