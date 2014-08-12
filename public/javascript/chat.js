@@ -21,10 +21,10 @@
     });
 
     this.socket.on("roomChangeResult", function (result) {
-      var $message = $("<div class='changed'>").text(result.text);
+      var $message = $("<div class='changed'>").text(result.message);
       $(".messages").prepend($message);
-      this.room = result.roomname;
       $('textarea').val('');
+      this.room = result.roomname;
     });
     this.socket.on("roomList", function (list) {
       var $list = $("<ul>");
