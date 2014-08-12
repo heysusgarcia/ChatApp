@@ -23,8 +23,8 @@
     this.socket.on("roomChangeResult", function (result) {
       var $message = $("<div class='changed'>").text(result.text);
       $(".messages").prepend($message);
-      $('textarea').val('');
       this.room = result.roomname;
+      $('textarea').val('');
     });
     this.socket.on("roomList", function (list) {
       var $list = $("<ul>");
@@ -35,7 +35,7 @@
       }
       $(".room-list").html($list);
       $(".room-list").prepend("<h1 style='margin-top: 0px'>Current Users</h1>")
-    })
+    });
   };
 
   Chat.prototype.sendMessage = function(message) {
