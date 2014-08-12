@@ -6,24 +6,26 @@
     this.room = room;
 
     this.socket.on("nicknameChangeResult", function (results) {
-      var $result = $("<div class='changed'>").text(results.message);
+      var $result = $("<div class='col-xs-9 changed'>").text(results.message);
+      var $div = $("<div class='row message-row'>");
+      $reuslt = $div.append($result);
       $(".messages").prepend($result);
-      $('textarea').val('');
     });
 
     this.socket.on("message", function (message) {
-      console.log("message?", message)
-      var $message = $("<div class='bg-info' style='height: auto'>").text(message.text);
-      var timeStamp = $("<i class='timestamp pull-right'>").text(' ' + moment().format('LT'));
+      var $message = $("<div class='col-xs-9 bg-info' style='height: auto'>").text(message.text);
+      var timeStamp = $("<i class='col-xs-3 timestamp pull-right'>").text(' ' + moment().format('LT'));
+      var $div = $("<div class='row message-row'>");
+      $message = $div.append($message);
       $message.append(timeStamp);
       $(".messages").prepend($message);
-      $('textarea').val('');
     });
 
     this.socket.on("roomChangeResult", function (result) {
-      var $message = $("<div class='changed'>").text(result.message);
+      var $message = $("<div class='col-xs-9 changed'>").text(result.message);
+      var $div = $("<div class='row'>");
+      $message = $div.append($message);
       $(".messages").prepend($message);
-      $('textarea').val('');
       this.room = result.roomname;
     });
     this.socket.on("roomList", function (list) {
@@ -40,14 +42,17 @@
 
   Chat.prototype.sendMessage = function(message) {
     this.socket.emit("message", { text: message });
+    $('textarea').val('');
   };
 
   Chat.prototype.changeNickname = function (nickname) {
     this.socket.emit("nicknameChangeRequest", nickname);
+    $('textarea').val('');
   };
 
   Chat.prototype.changeRoom = function(room) {
     this.socket.emit("handleRoomChangeRequests", room);
+    $('textarea').val('');
   };
 
 })(this);

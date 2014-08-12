@@ -1,11 +1,14 @@
 .bg-info {
   background: none;
-  border-bottom: 1px solid #dddddd;
   height: auto;
   width: auto;
 }
 .messages {
   height: auto;
+}
+.message-row {
+  border-bottom: 1px solid #dddddd;
+  width: 100%;
 }
 .changed {
   background: none;
@@ -23,6 +26,7 @@
 }
 .timestamp {
   color: #9B9898;
+  width: auto;
 }
 .messages-container {
   display: inline-block;
