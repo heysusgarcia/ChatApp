@@ -6,9 +6,9 @@
     this.room = room;
 
     this.socket.on("nicknameChangeResult", function (results) {
-      var $result = $("<div class='col-xs-9 changed'>").text(results.message);
-      var $div = $("<div class='row message-row'>");
-      $reuslt = $div.append($result);
+      var $result = $("<div class='col-xs-12 changed'>").text(results.message);
+      var $div = $("<div class='row'>");
+      $result = $div.append($result);
       $(".messages").prepend($result);
     });
 
@@ -22,7 +22,7 @@
     });
 
     this.socket.on("roomChangeResult", function (result) {
-      var $message = $("<div class='col-xs-9 changed'>").text(result.message);
+      var $message = $("<div class='col-xs-12 changed'>").text(result.message);
       var $div = $("<div class='row'>");
       $message = $div.append($message);
       $(".messages").prepend($message);

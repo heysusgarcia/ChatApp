@@ -2,13 +2,14 @@
   background: none;
   height: auto;
   width: auto;
+  padding-left: 0px;
 }
 .messages {
   height: auto;
 }
 .message-row {
   border-bottom: 1px solid #dddddd;
-  width: 100%;
+  width: 505px;
 }
 .changed {
   background: none;
@@ -18,7 +19,6 @@
 }
 .warning {
   background: none;
-  border-bottom: 1px solid #dddddd;
   font-weight: bold;
   color: red;
   padding-left: 0px;
