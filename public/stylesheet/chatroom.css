@@ -14,12 +14,14 @@
   background: none;
   border-bottom: 1px solid #dddddd;
   font-weight: bold;
+  padding-left: 0px;
 }
 .warning {
   background: none;
   border-bottom: 1px solid #dddddd;
   font-weight: bold;
   color: red;
+  padding-left: 0px;
 }
 .main-header {
   margin-bottom: 40px;

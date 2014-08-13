@@ -21,7 +21,7 @@ var processCommand = function (message) {
     var room = message.split(" ")[1];
     Chat.changeRoom(room);
   } else {
-    $(".messages").prepend("<div class='warning'>command not recognized</div>");
+    $(".messages").prepend("<div class='col-xs-9 warning'>command not recognized</div>");
   }
 }
 
