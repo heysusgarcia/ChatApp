@@ -31,7 +31,8 @@
   padding-left: 0px;
 }
 .main-header {
-  margin-bottom: 40px;
+  margin-bottom: 1%;
+  text-align: center;
 }
 .timestamp {
   color: #9B9898;
@@ -45,10 +46,24 @@
   height: 100px;
 }
 .feature {
-  text-align: center;
+  /*text-align: center;*/
   font-size: 20px;
   margin: 0;
   padding: 0;
+}
+
+.feature-header {
+  /*text-align: center;*/
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.features {
+  padding-top: 1%;
+  padding-bottom: 7%;
+  text-align: justify;
 }
 .modal-button {
   position: absolute;
