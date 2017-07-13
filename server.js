@@ -9,7 +9,7 @@ var port = process.env.PORT || 8080;
 var server = http.createServer(function (request, response) {
   router(request, response);
 
-  // chatServer(http);
+  chatServer(http);
 }).listen(port);
 
 chatServer(server);
