@@ -46,14 +46,12 @@
   height: 100px;
 }
 .feature {
-  /*text-align: center;*/
   font-size: 20px;
   margin: 0;
   padding: 0;
 }
 
 .feature-header {
-  /*text-align: center;*/
   font-size: 24px;
   font-weight: bold;
   margin: 0;
@@ -69,4 +67,19 @@
   position: absolute;
   right: 10px;
   margin: 0px;
+}
+
+.button {
+  background-color: #e7e7e7;
+  font-size: 18px;
+  border-radius: 4px;
+  border: none;
+  padding: 1%;
+  cursor: pointer;
+  curson: hand;
+  padding: 3%;
+}
+
+.message-form {
+  text-align: center;
 }
