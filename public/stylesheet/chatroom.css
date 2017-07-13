@@ -2,9 +2,14 @@
    font-family: 'Abel', sans-serif;
 }
 
+h1 {
+  font-weight: bold;
+}
+
 .main-container {
   height: 100%;
 }
+
 .bg-info {
   background: none;
   height: auto;
